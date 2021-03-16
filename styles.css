@@ -142,6 +142,10 @@ footer{
     cursor: pointer;
 }
 
+a{
+    color:white;
+    text-decoration:none;
+}
 
 .add i{
     font-size:1.3rem;
