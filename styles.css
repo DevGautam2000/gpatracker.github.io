@@ -1,0 +1,232 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+
+
+html{
+    position: relative;
+}
+
+body{
+
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+    overflow-x: hidden;
+    height: 100vh;
+    
+        
+}
+
+
+.nav{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(90deg , rgb(53, 131, 219) , rgb(5, 45, 221));
+    color: white;
+    font-size: 1.2rem;
+    height: 40px;
+    padding: 25px 2%;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px 2px rgb(11, 51, 97) ;
+    
+}
+
+i{
+    margin-right: 6px;
+}
+
+
+.output{
+    background-color: white;
+    box-shadow: 2px 2px 8px 1px rgb(112, 212, 65) ;
+    border-radius: 10px;
+    width: 700px;
+    height: 60px;
+    padding: 2px 10px;
+    margin: 25px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+
+form{
+    background-color: white;
+    box-shadow: 2px 2px 8px 1px rgb(29, 85, 150) ;
+    border-radius: 10px;
+    width: 700px;
+    height: 40px;
+    padding: 2px 10px;
+    transition: visibility 0.5s ease;
+    margin: 25px auto;
+
+
+}
+
+
+form > div {
+
+    /* border : 2px red solid; */
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+
+}
+
+.select{
+    cursor: pointer;
+}
+
+.select, .input , .subject{
+
+    width: 25%;
+    margin:1% 0;
+    height: 20px;
+    font-size: .8rem;
+    border: none;
+    background-color:white;
+    border-bottom: 1px solid rgb(37, 5, 221);
+    padding: 2px;
+
+}
+
+
+.select:focus, .input:focus, .subject:focus{
+    outline: none;
+}
+
+.foot{
+    /* border: 1px solid; */
+    position: relative;
+    margin: 10px auto;
+    padding: 20px;
+    text-align: center;
+    bottom: 0px;
+    width: 100%;
+    
+}
+
+footer{
+
+    color: rgb(37, 5, 221);
+    font-size:.95rem;
+    /* font-weight: bold; */
+    line-height: 2;
+    
+}
+
+.copyright{
+    font-size:.9rem;
+    color:  rgb(155, 147, 147);
+}
+
+.add{
+
+    background-color: white;
+    position: relative;
+    height: 50px;
+    width: 50px;
+    left: 50%;
+    margin: 30px 0;
+    padding: 30px;
+    transform: translateX(-50%);
+    border:0;
+    border-radius: 50%;
+    box-shadow: 1px 1px 8px 1px rgb(11, 51, 97) ;
+    /* bottom: 15%; */
+    cursor: pointer;
+}
+
+
+.add i{
+    font-size:1.3rem;
+    display: flex;
+    color: rgb(11, 51, 97);
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+}
+
+.add:focus{
+    outline: none;
+}
+    
+
+.add:active{
+   
+   background-color:  rgb(114, 174, 241);
+    
+}
+
+.add:disabled{
+    background-color: darkgray;
+    cursor:not-allowed;
+}
+
+
+@media(max-width: 700px) and (min-width: 501px) and (orientation:portrait){
+
+    form{
+        width: 350px;
+        height: 35px;
+
+        }
+
+    .output{
+        width: 350px;
+    }
+}
+
+@media(max-width: 500px) and (orientation:portrait){
+
+    form{
+        width: 308px;
+        height: 35px;
+        }
+
+    .output{
+        width: 308px;
+    }
+}
+
+@media(max-width: 800px)and (min-width: 650px) and (orientation:portrait){
+
+    form{
+        width: 500px;
+       
+        }
+
+        .output{
+            width: 500px;
+        }
+}
+
+
+@media(max-width: 850px) and (orientation:landscape){
+
+  
+  
+    form{
+  
+      margin: 20px auto;
+      width: 500px;
+    }
+
+    .output{
+        width: 500px;
+    }
+  
+    .select, .input, .subject{
+  
+      margin: 2% 0;
+    }
+  
+  
+
+  }
+  
