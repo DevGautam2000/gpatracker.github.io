@@ -1,1 +1,7 @@
 # gpatracker.github.io
+
+
+GPA TRACKER FOR SMIT 
+FRONT END ONLY
+
+WORKING ON BACKEND
