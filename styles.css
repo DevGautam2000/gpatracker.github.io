@@ -215,6 +215,29 @@ footer{
     form{
   
       margin: 20px auto;
+      width: 600px;
+    }
+
+    .output{
+        width: 600px;
+    }
+  
+    .select, .input, .subject{
+  
+      margin: 2% 0;
+    }
+  
+  
+
+  }
+
+@media(max-width: 700px) and (orientation:landscape){
+
+  
+  
+    form{
+  
+      margin: 20px auto;
       width: 500px;
     }
 
