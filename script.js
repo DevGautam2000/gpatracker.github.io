@@ -1,12 +1,12 @@
 add = document.querySelector(".add");
 container = document.querySelector(".container");
 lists = document.querySelectorAll(".select");
-count = 0;
+count = 5;
 
 credit = add.addEventListener("click", addList);
 
 function addList() {
-  if (count++ <= 6) {
+  if (count++ <= 11) {
     div = document.createElement("div");
     div.setAttribute("class", "form");
 
@@ -17,7 +17,7 @@ function addList() {
                   class="subject"
                   type="text"
                   name="Subject"
-                  placeholder="Subject"
+                  placeholder="Subject ${count - 1}"
                 />
         
                 <select class="select" name="credit" id="credit">
@@ -47,7 +47,7 @@ function addList() {
 
     container.append(div);
 
-    if (count > 6) {
+    if (count > 12) {
       add.disabled = true;
     }
   }
